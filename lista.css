@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+
+/*Navbar y header */
+
+.header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:110px;
+    padding: 2px 3%;
+}
+
+.header .logo{
+    margin-right:auto; 
+}
+
+.header .logo img{
+    height: 100px;
+    width: auto;
+    transition: ease-out 0.4s;
+}
+
+.header .logo img:hover{
+    transform:scale(1.2) translate(-10px,20px);
+}
+
+.header .links{
+    list-style: none;
+}
+
+.header .links li{
+    display:inline-block;
+    padding: 0 20px;
+}
+
+.header .links a{
+    font-size: 700;
+    color: #8E5572;
+    text-decoration: none;
+    transition: linear 0.3s;
+}
+
+.header .links a:hover{
+    color:#17BEBB;
+    transform: scale(1,5) translateX(-10px);
+    padding:10px 5px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #8E5572;
+    padding: 9px 25px;
+    background-color: none;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: linear 0.3s;
+}
+
+.header .btn button:hover{
+    background: #8E5572;
+    color:#17BEBB;
+    transform: scale(1.1) translateY(10px);
+    padding:15px 30px;
+}
+
+.body{
+    background-image: url(img/background2.jpg);
+    background-size: cover;
+    min-height: 120vh;
+    height: 100vh;
+}
+
+/*Lista de cosas */
+
+.cosas-a-comprar {
+    display:flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin:auto;
+    padding: 10% 35%;
+    transition: 0.3s;
+}
+
+.cosas-a-comprar .lista{
+    transition: 0.3s;
+    margin:auto;
+}
+
+.cosas-a-comprar .lista:hover{
+    border-style:groove;
+    border-color: #DAD2DB;
+    transform: scale(1.2);
+    background-color: #8E5572;
+    padding: 20px 20px;
+}
+
+.cosas-a-comprar .lista li{
+    color: #DAD2DB;
+    text-decoration: none;
+    list-style: none;
+    padding:10px 15px;
+    font-size: 25px;
+    transition: 0,3s;
+}
+
+.cosas-a-comprar .lista li a{
+    text-decoration: none;
+    color: #17BEBB;
+}
+
+.cosas-a-comprar .lista li:hover{
+    color:#92F2F0;
+    transform:scale(1.1);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 900;
+    margin:auto;
+}
+
+.cosas-a-comprar .lista li a:hover{
+    text-decoration: underline;
+    color:#DAD2DB;
+}
+
+.footer p{
+    display:flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    margin: 0,5%;
+    padding: 1%;
+    color: black;
+    font-weight: 700;
+    font-size:30px;
+
+    }
+
+
+/*Texto suelto*/
+
+.texto{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin:15%;
+    color:#DAD2DB;
+    font-size: 100vh;
+    font-weight: 700;
+    padding:10px 25px;
+
+}
+
+.texto2 {
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin:10%;
+    color:#DAD2DB;
+    font-size: 100vh;
+    font-weight: 700;
+    padding:5px 20px;
+}
+
+/*404 error*/
+
+.error{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:5% 30%;
+
+}
+
+.error:hover{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: rotate 1s infinite 0.01s linear;
+}
+
+
+
+
+/*Codigo para animar */
+
+.animate{
+    animation-duration: 1s;
+    animation-fill-mode:both;
+}
+
+.animate--infinite{
+    animation-iteration-count: infinite;
+}
+
+.animate--delay{
+    animation-delay:1s;
+}
+
+.animate--fast{
+    animation-duration: 0.6s;
+}
+
+.animate--slow{
+    animation-duration: 3s;
+}
+
+
+/*Animaciones que voy a usar*/
+
+.slideLeft{
+    animation-name: slideLeft;
+    animation-timing-function: ease-in;
+    animation-duration: 2.1s;
+    animation-delay: 0.2s;
+
+}
+
+.rotate {
+    animation-name: rotate;
+    animation-timing-function: linear;
+
+}
+
+.scaleUp {
+    animation-name: scaleUp;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes scaleUp{
+    from{
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(3.0);
+    }
+}
+
+@keyframes slideLeft {
+    from{
+       transform: translateX(-300px);
+    }
+
+    to{
+       transform: translateX(0px);
+    }
+
+
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+        }
+}
+
