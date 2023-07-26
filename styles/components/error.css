@@ -1,0 +1,18 @@
+/*404 error*/
+
+.error{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:5% 30%;
+
+}
+
+.error:hover{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: rotate 1s infinite 0.01s linear;
+}
+
+

@@ -1,0 +1,139 @@
+/*Navbar y header */
+
+.header{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px 3%;
+    position:relative;
+    z-index: 9999;
+}
+
+
+.menu {
+    display:none;
+}
+
+/* .hamburguesa{
+    display:block;
+    color:#DAD2DB;
+    height:15%;
+    width:15%;
+    background-color: transparent;
+    border-color: none;
+    border-style: none;
+    margin:0;
+
+} */
+
+
+  /* md */
+  @media (min-width: 768px) {
+
+    .menu{
+        display:flex;
+        align-items: center;
+        padding:0;
+        gap:2em;
+    }
+
+    .header .logo{
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .header .logo img{
+        display: inline;
+        height: 150px;
+        width: auto;
+        transition: ease-in-out 0.5s;
+    }
+    
+    .header .logo img:hover{
+        transform:scale(1.1);
+        filter:hue-rotate(360deg);
+    }
+    
+    .header .links{
+        display:flex;
+        align-items: center;
+        list-style: none;
+        letter-spacing: -0.05em;
+        gap: 2em;
+        font-weight: 1000;
+        font-size:small;
+    }
+    
+    .header .links li{
+        padding:0;
+    }
+    
+    .header .links a{
+        font-size: 700;
+        color: #8E5572;
+        text-decoration: none;
+        transition: linear 0.3s;
+        text-overflow: initial;
+    }
+    
+    .header .links a:hover{
+        color:#17BEBB;
+        transform: scale(1,5) translateX(-10px);
+        padding:10px 5px;
+        border-radius: 50px;
+        font-weight: 600;
+    }
+    
+    .header .links .separador{
+    
+        border: 1px solid #8E5572;
+        padding-top: 1.5em;
+    }
+    
+    .header .boton {
+        margin-left: 1em;
+    }
+    
+    .header .btn button{
+        font-weight: 700;
+        color: #8E5572;
+        padding: 9px 25px;
+        background-color: none;
+        border:none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: linear 0.3s;
+    }
+    
+    .header .btn button:hover{
+        background: #8E5572;
+        color:#17BEBB;
+        transform: scale(1.1) translateY(10px);
+        padding:15px 30px;
+    }
+
+    .hamburguesa{
+        display:none;
+    }
+
+    .mobile-nav,
+    .page,
+    .wrapper{
+        display:none;
+    }
+
+  }
+
+   /* lg
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+
+    body{
+        min-height: 150vh;
+        height: 100vh;
+    }
+
+  } */
+

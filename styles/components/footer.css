@@ -1,0 +1,14 @@
+.footer_titulo{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    margin-top: 10%;
+    font-size: 15px;
+    font-weight: 1000;
+    color: sandybrown;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    user-select: none;
+
+}
